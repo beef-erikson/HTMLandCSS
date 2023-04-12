@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
 .Wrap {
     max-width: 1400px;
     margin: 0 auto;
@@ -18,27 +23,60 @@ body {
 .WrapMiddle {
     width: 100%;
     font-size: 0;
+    position: relative;
+}
+
+.OffCanvas-Active .Left,
+.OffCanvas-Active .Middle {
+    transform: translate3d(200px, 0, 0);
+    transition: transform .3s;
 }
 
 .Left {
     height: 625px;
-    width: 20.83%;
     background-color: #03a66a;
     display: inline-block;
+    position: absolute;
+    left: -200px;
+    width: 200px;
+    font-size: .9rem;
+    transition: transform .3s;
+}
+
+@media (min-width: 40rem) {
+    .Left {
+        width: 20.8333333%;
+        left: 0;
+        position: relative;
+    }
 }
 
 .Middle {
     height: 625px;
-    width: 68.75%;
     background-color: #bbbf90;
-    display: inline-block;
+    transition: transform .3s;
+    font-size: .9rem;
+}
+
+@media (min-width: 40rem) {
+    .Middle {
+        width: 68.75%;
+        display: inline-block;
+    }
 }
 
 .Right {
     height: 625px;
-    width: 10.41%;
+    width: 100%;
     background-color: #03a66a;
-    display: inline-block;
+    font-size: .9rem;
+}
+
+@media (min-width: 40rem) {
+    .Right {
+        width: 10.4166667%;
+        display: inline-block;
+    }
 }
 
 .Footer {
