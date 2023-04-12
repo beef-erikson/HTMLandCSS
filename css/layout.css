@@ -44,6 +44,18 @@ body {
     margin-left: auto;
 }
 
+.nav-bar-highlight {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2px;
+    background-color: #025059;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: #ddd;
+}
+
 .WrapMiddle {
     width: 100%;
     font-size: 0;
