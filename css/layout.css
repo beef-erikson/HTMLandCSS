@@ -20,7 +20,7 @@ body {
     background-color: #038c5a;
 }
 
-.container {
+.nav-bar {
     background-color: indigo;
     font-family: "Oswald", sans-serif;
     font-size: 1rem;
@@ -30,17 +30,17 @@ body {
     padding: 0 1rem;
 }
 
-.item,
-.last-item {
+.nav-bar-item,
+.nav-bar-last-item {
     color: #ebebeb;
     text-decoration: none;
 }
 
-.item {
+.nav-bar-item {
     margin-right: 1rem;
 }
 
-.last-item {
+.nav-bar-last-item {
     margin-left: auto;
 }
 
