@@ -1,0 +1,17 @@
+.my-first-grid {
+    display: inline-grid;
+    grid-gap: 10px;
+    grid-template-columns: [left-start] 200px [left-end center-start] 200px 
+        [center-end right-start] 200px [right-end];
+    grid-template-rows: 200px 200px 200px;
+    background-color: #e4e4e4;
+}
+
+[class^='grid-item'] {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    outline: 3px dashed #f90;
+    font-size: 30px;
+    color: #333;
+}
