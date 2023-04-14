@@ -1,5 +1,5 @@
 .my-first-grid {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px;
     grid-gap: 10px;
@@ -27,6 +27,9 @@
 }
 
 [class^="grid-item-"] {
+    display: grid;
+    justify-content: center;
+    align-content: center;
     outline: 3px dashed #f90;
     font-size: 30px;
     color: #333;
