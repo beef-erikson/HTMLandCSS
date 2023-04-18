@@ -1,0 +1,33 @@
+.parent > .descendant {
+    border: 1px dashed #999;
+    display: grid;
+}
+
+.one + .item {
+    border: 3px dashed #f90;
+}
+
+.item:nth-child(3) ~ .item {
+    border: 3px dashed #f90;
+}
+
+.a-div {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-color: blue;
+}
+
+.a-div:not(.not-me) {
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.thing {
+    padding: 1rem;
+    background-color: violet;
+}
+
+.thing:empty {
+    display: none;
+}
