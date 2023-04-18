@@ -6,6 +6,17 @@ div {
     display: inline-block;
 }
 
+/* span:nth-child(2n+3) {
+	background-color: #f90;
+	border-radius: 50%;
+} */
+
+/* span:nth-child(-2n+3) {
+	background-color: #f90;
+	border-radius: 50%;
+} */
+
+
 .span-class:nth-of-type(-2n + 3) {
     background-color: #f90;
     border-radius: 50%;
