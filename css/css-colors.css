@@ -1,14 +1,20 @@
+.reds {
+    margin: 5px 5px;
+}
 .redness {
-    display: flex;
+    display: block;
+    padding: 5px;
     background-color: hsl(359 99% 55% / 0.75);
 }
 
 .darker-redness {
-    display: flex;
+    display: block;
+    padding: 5px;
     background-color: hsl(359 99% 40% / 75%);
 }
 
 .darkest-redness {
-    display: flex;
+    display: block;
+    padding: 5px;
     background-color: hsl(359 99% 25% / 75%);
 }
