@@ -1,0 +1,11 @@
+.redness {
+    background-color: hsl(359, 99%, 50%, 0.75);
+}
+
+.darker-redness {
+    background-color: hsl(359, 99%, 40%, 75%);
+}
+
+.darkest-redness {
+    background-color: hsl(359, 99%, 25%, 75%);
+}
