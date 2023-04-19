@@ -13,8 +13,10 @@
     font-display: fallback;
 }
 
-div {
+span {
     font-family: "RubikPixels", sans-serif;
     font-size: 3rem;
-    color: #025059;
+    color: blue;
+    background-color: darkgray;
+    display: flex;
 }
