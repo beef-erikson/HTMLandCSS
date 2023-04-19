@@ -6,7 +6,15 @@
     font-display: fallback;
 }
 
+@font-face {
+    font-family: "RubikPixels";
+    src: url("../fonts/RubikPixels-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-display: fallback;
+}
+
 div {
-    font-family: "InterRegular", sans-serif;
+    font-family: "RubikPixels", sans-serif;
     font-size: 3rem;
+    color: #025059;
 }
