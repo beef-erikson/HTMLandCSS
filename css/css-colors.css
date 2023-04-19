@@ -1,14 +1,14 @@
 .redness {
     display: flex;
-    background-color: hsl(359, 99%, 55%, 0.75);
+    background-color: hsl(359 99% 55% / 0.75);
 }
 
 .darker-redness {
     display: flex;
-    background-color: hsl(359, 99%, 40%, 75%);
+    background-color: hsl(359 99% 40% / 75%);
 }
 
 .darkest-redness {
     display: flex;
-    background-color: hsl(359, 99%, 25%, 75%);
+    background-color: hsl(359 99% 25% / 75%);
 }
