@@ -21,7 +21,7 @@
 
 .radial-gradient {
     background: radial-gradient(
-        10em circle at bottom, yellow, orange, red);
+        farthest-side circle at bottom, yellow, orange, red);
     height: 10rem;
     width: 400px;
 }
