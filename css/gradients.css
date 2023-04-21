@@ -39,3 +39,16 @@
     height: 10rem;
     background: conic-gradient(at center, #003700 0deg, white 50%, #003700 360deg);
 }
+
+.four-colors {
+    margin: 0.5rem;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(at center, red 0 25%, orange 0% 180deg, green 0% 75%, blue 0% 100%);
+}
+
+.four-colors-container {
+    display: flex;
+    justify-content: center;
+}
