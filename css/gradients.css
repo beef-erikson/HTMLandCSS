@@ -1,5 +1,20 @@
 .linear-gradient {
-    background: linear-gradient(to top right, red, blue);
+    background: linear-gradient(to top right, red -10%, blue);
     display: grid;
     height: 10rem;
+}
+
+.color-stops {
+    margin: 1rem;
+    height: 10rem;
+    display: grid;
+    background: linear-gradient(
+        #4a8197 0%,
+        #4a8197 2%,
+        #244d5d 2%,
+        #0b2a39 50%,
+        #244d5d 98%,
+        #4a8197 98%,
+        #4a8197 100%
+    );
 }
