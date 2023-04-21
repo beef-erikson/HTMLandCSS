@@ -1,0 +1,13 @@
+p {
+    text-shadow: 10px 10px 10px #ccc;
+    font-size: 10rem;
+}
+
+.dees-hands {
+    text-shadow: 5px 5px #4a8197,
+                 10px 10px #5a6d73,
+                 15px 15px #851492,
+                 20px 20px #c9a6a6;
+    
+    font-size: 10rem;
+}
