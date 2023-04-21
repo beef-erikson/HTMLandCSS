@@ -48,7 +48,15 @@
             at center, red 0 25%, orange 0% 180deg, green 0% 75%, blue 0% 100%);
 }
 
-.four-colors-container {
+.four-colors-container,
+.repeat-radial-container {
     display: flex;
     justify-content: center;
+}
+
+.repeat-radial {
+    margin: 0.5rem;
+    height: 600px;
+    width: 600px;
+    background: repeating-radial-gradient(black 0px, #022f47 10px, #105b6a 20px);
 }
