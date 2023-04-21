@@ -44,7 +44,8 @@
     margin: 0.5rem;
     height: 200px;
     width: 200px;
-    background: conic-gradient(at center, red 0 25%, orange 0% 180deg, green 0% 75%, blue 0% 100%);
+    background: conic-gradient(
+            at center, red 0 25%, orange 0% 180deg, green 0% 75%, blue 0% 100%);
 }
 
 .four-colors-container {
