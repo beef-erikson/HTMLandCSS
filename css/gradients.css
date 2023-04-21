@@ -60,3 +60,14 @@
     width: 600px;
     background: repeating-radial-gradient(black 0px, #022f47 10px, #105b6a 20px);
 }
+
+body {
+    margin: 1rem;
+    background: 
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size:16px 16px;
+}
