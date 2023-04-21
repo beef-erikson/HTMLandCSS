@@ -67,6 +67,13 @@ body {
 
 .filter-multiple {
     -webkit-backdrop-filter: drop-shadow(5px 5px 5px #0b2a39) blur(3px) sepia(65%) saturate(125%);
-    filter: drop-shadow(5px 5px 5px #0b2a39) blur(3px) sepia(65%) saturate(125%); 
-    
+    filter: drop-shadow(5px 5px 5px #0b2a39) blur(3px) sepia(65%) saturate(125%);
+}
+
+.filter-clip-circle {
+    clip-path: circle(20%);
+}
+
+.filter-clip-ellipse {
+    clip-path: ellipse(200px 100px at 20% 25%);
 }
