@@ -32,3 +32,10 @@
     padding: 0.5rem;
     background-color: hsl(348, 8%, 24%);
 }
+
+.conic-gradient {
+    margin: 0.5rem;
+    display: flex;
+    height: 10rem;
+    background: conic-gradient(at center, #003700 0deg, white 50%, #003700 360deg);
+}
