@@ -1,0 +1,72 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-multi {
+    height: 100vh;
+    width: 100vw;
+    background:
+            url('../img/rosetta.png'),
+            url('../img/moon.png'),
+            url('../img/stars.jpg');
+    background-size: 75vmax, 50vw, cover;
+    background-position: top 50px right 80px, 40px 40px, top center;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+}
+
+
+[class^="filter"], .original {
+    height: 1000px;
+    width: auto;
+    background-image: url('../img/landscape.jpg');
+    margin-bottom: 5rem;
+}
+
+.filter-blur {
+    filter: blur(5px);
+}
+
+.filter-brightness {
+    filter: brightness(3);
+}
+
+.filter-contrast {
+    filter: contrast(3);
+}
+
+.filter-drop-shadow {
+    filter: drop-shadow(16px 16px 20px blue);
+}
+
+.filter-grayscale {
+    filter: grayscale(80%);
+}
+
+.filter-hue-rotate {
+    filter: hue-rotate(90deg);
+}
+
+.filter-invert {
+    filter: invert(80%);
+}
+
+.filter-opacity {
+    filter: opacity(50%);
+}
+
+.filter-saturate {
+    filter: saturate(3);
+}
+
+.filter-sepia {
+    filter: sepia(80%);
+}
+
+.filter-multiple {
+    -webkit-backdrop-filter: drop-shadow(5px 5px 5px #0b2a39) blur(3px) sepia(65%) saturate(125%);
+    filter: drop-shadow(5px 5px 5px #0b2a39) blur(3px) sepia(65%) saturate(125%); 
+    
+}
