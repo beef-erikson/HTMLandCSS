@@ -18,3 +18,17 @@
         #4a8197 100%
     );
 }
+
+.radial-gradient {
+    background: radial-gradient(
+        12rem circle at bottom, yellow, orange, red);
+    height: 10rem;
+    width: 400px;
+}
+
+.radial-gradiant-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
