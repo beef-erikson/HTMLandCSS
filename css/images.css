@@ -81,3 +81,7 @@ body {
 .filter-clip-inset {
     clip-path: inset(40px 20px 40px 20px round 0 30px 14px 40px);
 }
+
+.filter-clip-polygon {
+    clip-path: polygon(50% 60px, 100% calc(100% - 40px), 0% calc(100% - 40px));
+}
