@@ -1,3 +1,14 @@
 .html5-icon {
     background-color: darkcyan;
 }
+
+.icon-drag-left-right {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: red;
+    color: orange;
+}
+
+.icon-drag-right {
+    fill: coral;
+}
