@@ -12,3 +12,21 @@
 .icon-drag-right {
     fill: coral;
 }
+
+.shape-container {
+    width: 1000px;
+    height: 200px;
+}
+.shape {
+    display: block;
+    --stroke1: #ddd;
+    --fill1: #444;
+    --stroke2: #f90;
+    --fill2: #663d00;
+}
+.shape:hover {
+    --stroke1: #333;
+    --fill1: #444;
+    --stroke2: #fff;
+    --fill2: #ffc266;
+}
