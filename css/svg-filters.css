@@ -1,0 +1,3 @@
+.svg-filter {
+    filter: url(../img/filter.svg#myFilter);
+}
