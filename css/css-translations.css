@@ -1,0 +1,22 @@
+.scale,
+.translate,
+.rotate{
+    width: 200px;
+    height: 200px;
+    background-color: #267a94;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.translate:hover {
+    transform: translate(-20px, -20px);
+}
+
+.rotate:hover {
+    transform: rotate(45deg);
+}
