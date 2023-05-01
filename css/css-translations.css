@@ -77,11 +77,11 @@
 }
 
 .flipper:hover .flipper-vertical {
-    transform: rotateX(180deg);
+    transform: rotateX(180deg) translate3d(0, 0, -120px);
 }
 
 .flipper:hover .flipper-horizontal {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) translate3d(0, 0, -120px);
 }
 
 .outer {
