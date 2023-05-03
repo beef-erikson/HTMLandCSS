@@ -153,3 +153,21 @@ body {
         box-shadow: 0 0 3px 4px #bbb;
     }
 }
+
+.background-change {
+    display: grid;
+    animation: fillBg 3s;
+    height: 200px;
+    width: 400px;
+    border: 1px solid #ccc;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillBg {
+    0% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+}
