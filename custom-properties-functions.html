@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="css/custom-properties-functions.css">
 </head>
 <body>
-Here is some text.
+<p>Here is some text.</p>
+
+<button type="button" id="colorToggle">Toggle Colors</button>
+<script type="text/javascript">
+    let root = document.documentElement;
+    let btn = document.getElementById("colorToggle");
+
+    btn.addEventListener("click", (e) => {
+        root.style.setProperty(
+            "--background",
+            getComputedStyle(root).getPropertyValue("--background") ===
+            "#333"
+                ? "#eee"
+                : "#333"
+        );
+        root.style.setProperty(
+            "--foreground",
+            getComputedStyle(root).getPropertyValue("--foreground") ===
+            "#eee"
+                ? "#333"
+                : "#eee"
+        );
+    });
+</script>
 </body>
 </html>
