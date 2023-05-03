@@ -98,3 +98,10 @@
     background-color: #999;
     transform: translate(-50%, 50%);
 }
+
+@keyframes pulse {
+    to {
+        text-shadow: 0 0 5px #bbb;
+        box-shadow: 0 0 3px 4px #bbb;
+    }
+}
