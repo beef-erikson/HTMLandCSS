@@ -117,8 +117,7 @@ textarea {
     border: 1px solid #ebebeb;
     outline: none;
     transition: transform 0.4s, box-shadow 0.4s, background-position 0.2s;
-    background: radial-gradient(400px circle, #fff 99%, transparent 99%),
-    #f1f1f1;
+    background: radial-gradient(400px circle, #fff 99%, transparent 99%), #f1f1f1;
     background-position: -400px 90px, 0 0;
     background-repeat: no-repeat, no-repeat;
     border-radius: 0;
