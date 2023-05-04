@@ -12,19 +12,21 @@
     <link rel="stylesheet" href="css/forms.css" />
 </head>
 <body>
-<form id="redemption" method="post">
-    <div>
+<form class="form-Wrapper" id="redemption" method="post">
+    <div class="form-Intro">
         <h1>Oscar Redemption</h1>
         <h2>
             Here's your chance to set the record straight: tell us what
             year the wrong film got nominated, and which film
             <b>should</b> have received a nod...
         </h2>
+        <b>Note: an asterisk (*) indicates a required field</b>
     </div>
-    <fieldset>
-        <legend>About the offending film (part 1 of 3)</legend>
-        <div>
-            <label for="film">The film in question?</label>
+    <fieldset class="form-About_Wrapper">
+        <legend>
+            About the offending film <span>(part 1 of 3)</span>
+        </legend>
+        <div class="form-Input_Wrapper">
             <input
                     id="film"
                     name="film"
@@ -32,62 +34,74 @@
                     placeholder="e.g. King Kong"
                     required
             />
+            <label for="film">The film in question?</label>
         </div>
-        <div>
-            <label for="yearOfCrime">Year Of Crime</label>
+        <div class="form-Input_Wrapper">
             <input
-                    step="5"
-                    class="yearOfCrime"
                     id="yearOfCrime"
                     name="yearOfCrime"
                     type="number"
-                    min="1930"
+                    min="1929"
                     max="2015"
                     required
             />
+            <label for="yearOfCrime">Year Of Crime</label>
         </div>
-        <div>
-            <label for="awardWon">Award Won</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="awardWon"
                     name="awardWon"
                     type="text"
                     list="awards"
+                    placeholder="e.g. Best Picture"
             />
             <datalist id="awards">
-                <label>
-                    <select>
-                        <option value="Best Picture"></option>
-                        <option value="Best Director"></option>
-                        <option value="Best Adapted Screenplay"></option>
-                        <option value="Best Original Screenplay"></option>
-                    </select>
-                </label>
+                <select>
+                    <option
+                            label="Best Picture"
+                            value="Best Picture"
+                    ></option>
+                    <option
+                            label="Best Director"
+                            value="Best Director"
+                    ></option>
+                    <option
+                            label="Best Adapted Screenplay"
+                            value="Best Adapted Screenplay"
+                    ></option>
+                    <option
+                            label="Best Original Screenplay"
+                            value="Best Original Screenplay"
+                    ></option>
+                </select>
             </datalist>
+            <label for="awardWon">Award Won</label>
         </div>
-        <div>
+        <div class="form-Input_Wrapper">
+                    <textarea
+                            id="whyItsWrong"
+                            name="whyItsWrong"
+                            placeholder="I fell asleep within 20 minutes..."
+                            required
+                    ></textarea>
             <label for="whyItsWrong">Tell us why that's wrong?</label>
-            <textarea
-                    id="whyItsWrong"
-                    name="whyItsWrong"
-                    placeholder="I fell asleep within 20 minutes..."
-                    required
-            ></textarea>
         </div>
-        <div>
+        <div class="form-Input_Wrapper">
+                    <span class="form-Slider_Wrapper">
+                        <input
+                                id="howYouRateIt"
+                                name="howYouRateIt"
+                                type="range"
+                                min="1"
+                                max="10"
+                                value="5"
+                                onchange="showValue(this.value)"
+                        />
+                        <span id="range">5</span>
+                    </span>
             <label for="howYouRateIt"
-            >How you rate it (1 is woeful, 10 is
-                awesome)</label
+            >How you rate it (1 is woeful, 10 is great)</label
             >
-            <input
-                    id="howYouRateIt"
-                    name="howYouRateIt"
-                    type="range"
-                    min="1"
-                    max="10"
-                    value="5"
-                    onchange="showValue(this.value)"
-            /><span id="range">5</span>
         </div>
         <script>
             function showValue(newValue) {
@@ -96,11 +110,12 @@
         </script>
     </fieldset>
 
-    <fieldset>
-        <legend>What should have won? (part 2 of 3)</legend>
+    <fieldset class="form-What_Wrapper">
+        <legend>
+            What should have won? <span>(part 2 of 3)</span>
+        </legend>
 
-        <div>
-            <label for="filmGood">The film that should have won?</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="filmGood"
                     name="filmGood"
@@ -108,41 +123,26 @@
                     placeholder="e.g. Cable Guy"
                     required
             />
+            <label for="filmGood">The film that should have won?</label>
         </div>
 
-        <div>
+        <div class="form-Input_Wrapper">
+                    <textarea
+                            id="whyItShould"
+                            name="whyItShould"
+                            placeholder="Hello? CAABBLLLLE GUUUY!!!!!"
+                            required
+                    ></textarea>
             <label for="whyItShould"
             >Tell us why it should have won?</label
             >
-            <textarea
-                    id="whyItShould"
-                    name="whyItShould"
-                    placeholder="Hello? CAABBLLLLE GUUUY!!!!!"
-                    required
-            ></textarea>
-        </div>
-        <div>
-            <label for="howYouRateThis"
-            >How you rate it (1 is woeful, 10 is
-                awesome)</label
-            >
-            <input
-                    id="howYouRateThis"
-                    name="howYouRateThis"
-                    type="number"
-                    min="1"
-                    max="10"
-                    value="5"
-                    required
-            />
         </div>
     </fieldset>
 
-    <fieldset>
-        <legend>About you? (part 3 of 3)</legend>
+    <fieldset class="form-You_Wrapper">
+        <legend>About you? <span>(part 3 of 3)</span></legend>
 
-        <div>
-            <label for="name">Your Name</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="name"
                     name="name"
@@ -150,25 +150,23 @@
                     placeholder="Dwight Schultz"
                     required
             />
+            <label for="name">Your Name</label>
         </div>
-        <div>
-            <label for="color">Your favorite color</label>
+        <div class="form-Input_Wrapper">
             <input id="color" name="color" type="color" />
+            <label for="color">Your favorite color</label>
         </div>
-        <div>
-            <label for="date">Date/Time</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="date"
                     class="pickDate"
                     type="date"
                     name="date"
-                    value="2023-07-21"
+                    value="2022-06-16"
             />
+            <label for="date">Date/Time</label>
         </div>
-        <div>
-            <label for="tel"
-            >Telephone (so we can berate you if you're wrong)</label
-            >
+        <div class="form-Input_Wrapper">
             <input
                     id="tel"
                     name="tel"
@@ -177,9 +175,11 @@
                     autocomplete="off"
                     required
             />
+            <label for="tel"
+            >Telephone (so we can berate you if you're wrong)</label
+            >
         </div>
-        <div>
-            <label for="email">Your Email address</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="email"
                     name="email"
@@ -187,18 +187,31 @@
                     placeholder="dwight.schultz@gmail.com"
                     required
             />
+            <label for="email">Your Email address</label>
         </div>
-        <div>
-            <label for="web">Your Web address</label>
+        <div class="form-Input_Wrapper">
             <input
                     id="web"
                     name="web"
                     type="url"
-                    placeholder="https://www.mysite.com"
+                    placeholder="http://www.mysite.com"
             />
+            <label for="web">Your Web address</label>
         </div>
     </fieldset>
-    <input type="submit" id="submit" value="Submit Redemption" />
+    <button
+            class="form-Submit_Btn"
+            type="submit"
+            value="Submit Redemption"
+    >
+                <span class="flipper">
+                    <span class="flipper-object flipper-vertical">
+                        <span class="panel front">Ready?</span>
+                        <span class="panel back">Submit</span>
+                    </span>
+                </span>
+    </button>
 </form>
 </body>
+</html>
 </html>
