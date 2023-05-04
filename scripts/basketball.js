@@ -11,6 +11,7 @@ const setCoords = () => {
 };
 
 setCoords();
+
 // Every so often, set the position of the ball
 setInterval(() => {
     setCoords();
