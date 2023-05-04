@@ -1,0 +1,7 @@
+input:placeholder-shown {
+    color: red; // doesn't work in google chrome
+}
+
+.yearOfCrime {
+    caret-color: orange;
+}

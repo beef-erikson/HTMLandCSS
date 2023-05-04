@@ -9,7 +9,7 @@
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#ff9900" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
 </head>
 <body>
 <form id="redemption" method="post">
@@ -36,6 +36,7 @@
         <div>
             <label for="yearOfCrime">Year Of Crime</label>
             <input
+                    class="yearOfCrime"
                     id="yearOfCrime"
                     name="yearOfCrime"
                     type="number"
@@ -53,12 +54,14 @@
                     list="awards"
             />
             <datalist id="awards">
-                <select>
-                    <option value="Best Picture"></option>
-                    <option value="Best Director"></option>
-                    <option value="Best Adapted Screenplay"></option>
-                    <option value="Best Original Screenplay"></option>
-                </select>
+                <label>
+                    <select>
+                        <option value="Best Picture"></option>
+                        <option value="Best Director"></option>
+                        <option value="Best Adapted Screenplay"></option>
+                        <option value="Best Original Screenplay"></option>
+                    </select>
+                </label>
             </datalist>
         </div>
         <div>
@@ -190,7 +193,7 @@
                     id="web"
                     name="web"
                     type="url"
-                    placeholder="http://www.mysite.com"
+                    placeholder="https://www.mysite.com"
             />
         </div>
     </fieldset>
