@@ -9,6 +9,7 @@ const setCoords = () => {
     ball.style.setProperty("--x", `${getRand(0, 100)}%`);
     ball.style.setProperty("--y", `${getRand(0, 100)}%`);
 };
+
 setCoords();
 // Every so often, set the position of the ball
 setInterval(() => {
